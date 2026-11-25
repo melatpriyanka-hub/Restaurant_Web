@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVORA | Fine Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">SAVORA<span>.</span></a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">Our Story</a>
+            <a href="#menu">Menu</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#reservation" class="nav-book">Book a Table</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="eyebrow">WELCOME TO SAVORA</span>
+            <h1>A Taste of Elegance,<br>Made with <em>Love.</em></h1>
+            <p>Discover exceptional flavours, thoughtfully crafted dishes and an unforgettable dining experience.</p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+                <a href="#reservation" class="btn btn-outline">Reserve a Table</a>
+            </div>
+
+            <div class="hero-info">
+                <span>✦ Fresh Ingredients</span>
+                <span>✦ Crafted with Passion</span>
+                <span>✦ Memorable Moments</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Elegant restaurant dining table">
+        </div>
+
+        <div class="about-content">
+            <span class="eyebrow">OUR STORY</span>
+            <h2>Where Passion Meets <em>Flavor</em></h2>
+            <p>
+                At Savora, every meal is a celebration of taste, creativity and
+                togetherness. We bring carefully selected ingredients, inspired
+                recipes and warm hospitality to your table.
+            </p>
+            <p>
+                From intimate dinners to special celebrations, our passion is
+                creating moments that stay with you long after the last bite.
+            </p>
+            <a href="#menu" class="btn btn-primary">Discover Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section" id="menu">
+        <div class="section-heading">
+            <span class="eyebrow">OUR SPECIALITIES</span>
+            <h2>Explore Our <em>Menu</em></h2>
+            <p>Delicious creations prepared with fresh ingredients and love.</p>
+        </div>
+
+        <div class="menu-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="starters">Starters</button>
+            <button class="filter-btn" data-category="main">Main Course</button>
+            <button class="filter-btn" data-category="desserts">Desserts</button>
+            <button class="filter-btn" data-category="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+
+            <div class="menu-card" data-category="starters">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80" alt="Fresh garden salad">
+                <div class="menu-card-content">
+                    <span class="menu-category">STARTER</span>
+                    <h3>Garden Fresh Salad</h3>
+                    <p>Fresh greens, cherry tomatoes, cucumber and house dressing.</p>
+                    <div class="menu-bottom">
+                        <span class="price">₹249</span>
+                        <button class="order-btn" data-item="Garden Fresh Salad">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="starters">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Italian pizza">
+                <div class="menu-card-content">
+                    <span class="menu-category">STARTER</span>
+                    <h3>Classic Margherita</h3>
+                    <p>Italian crust, mozzarella, fresh basil and tomato sauce.</p>
+                    <div class="menu-bottom">
+                        <span class="price">₹349</span>
+                        <button class="order-btn" data-item="Classic Margherita">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80" alt="Grilled main course">
+                <div class="menu-card-content">
+                    <span class="menu-category">MAIN COURSE</span>
+                    <h3>Signature Grilled Platter</h3>
+                    <p>Seasoned grilled vegetables and chef's signature sauce.</p>
+                    <div class="menu-bottom">
+                        <span class="price">₹549</span>
+                        <button class="order-btn" data-item="Signature Grilled Platter">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="main">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=600&q=80" alt="Pasta dish">
+                <div class="menu-card-content">
+                    <span class="menu-category">MAIN COURSE</span>
+                    <h3>Creamy Alfredo Pasta</h3>
+                    <p>Silky cream sauce, herbs, parmesan and perfectly cooked pasta.</p>
+                    <div class="menu-bottom">
+                        <span class="price">₹399</span>
+                        <button class="order-btn" data-item="Creamy Alfredo Pasta">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Chocolate cake">
+                <div class="menu-card-content">
+                    <span class="menu-category">DESSERT</span>
+                    <h3>Chocolate Indulgence</h3>
+                    <p>Rich chocolate cake served with a delicate chocolate drizzle.</p>
+                    <div class="menu-bottom">
+                        <span class="price">₹199</span>
+                        <button class="order-btn" data-item="Chocolate Indulgence">Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="drinks">
+                <img src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=600&q=80" alt="Fresh fruit beverage">
+                <div class="menu-card-content">
+                    <span class="menu-category">DRINK</span>
+                    <h3>Fresh Berry Cooler</h3>
+                    <p>A refreshing blend of berries, citrus and sparkling freshness.</p>
+                    <div class="menu-bottom">
+                        <span class="price">₹149</span>
+                        <button class="order-btn" data-item="Fresh Berry Cooler">Order</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="section-heading">
+            <span class="eyebrow">WHAT WE OFFER</span>
+            <h2>Our <em>Services</em></h2>
+            <p>Every occasion deserves something special.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">♨</div>
+                <h3>Fine Dining</h3>
+                <p>Enjoy an elegant dining experience with exceptional food and hospitality.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">♧</div>
+                <h3>Takeaway</h3>
+                <p>Enjoy your favourite dishes freshly prepared and packed for you.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">✧</div>
+                <h3>Event Catering</h3>
+                <p>Make celebrations memorable with our customised catering services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section" id="gallery">
+        <div class="section-heading">
+            <span class="eyebrow">A VISUAL FEAST</span>
+            <h2>Our <em>Gallery</em></h2>
+            <p>Explore the flavours and atmosphere of Savora.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80" alt="Restaurant interior">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Delicious meal">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80" alt="Restaurant dining">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=700&q=80" alt="Healthy food">
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation section" id="reservation">
+        <div class="reservation-content">
+            <span class="eyebrow">YOUR TABLE AWAITS</span>
+            <h2>Reserve Your <em>Experience</em></h2>
+            <p>Plan your visit and let us make your dining experience unforgettable.</p>
+        </div>
+
+        <form id="reservationForm" class="reservation-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="guestName">Full Name</label>
+                    <input type="text" id="guestName" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guestPhone">Phone Number</label>
+                    <input type="tel" id="guestPhone" placeholder="Enter phone number" pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bookingDate">Date</label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingTime">Time</label>
+                    <input type="time" id="bookingTime" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" required>
+                    <option value="">Select guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="7">7 Guests</option>
+                    <option value="8">8 Guests</option>
+                    <option value="9">9 Guests</option>
+                    <option value="10">10 Guests</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="specialRequest">Special Request (Optional)</label>
+                <textarea id="specialRequest" rows="3" placeholder="Any special requirements?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">Confirm Reservation</button>
+            <p id="reservationMessage" class="reservation-message"></p>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="section-heading">
+            <span class="eyebrow">GET IN TOUCH</span>
+            <h2>Contact <em>Us</em></h2>
+            <p>We would love to welcome you to Savora.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">⌖</div>
+                <h3>Our Location</h3>
+                <p>Restaurant Street, City, India</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">☎</div>
+                <h3>Phone</h3>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">✉</div>
+                <h3>Email</h3>
+                <p>hello@savora.com</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">◷</div>
+                <h3>Opening Hours</h3>
+                <p>Mon – Sun: 11 AM – 11 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <a href="#home" class="logo footer-logo">SAVORA<span>.</span></a>
+            <p>Crafting flavours. Creating memories.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">© 2026 Savora Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
